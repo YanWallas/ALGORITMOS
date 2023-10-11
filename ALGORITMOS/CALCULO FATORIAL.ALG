@@ -9,18 +9,15 @@ Var
 N, fatorial, contador: Inteiro
 
 Inicio
-Escreva("Digite um número natural (até 15): ")
+Escreva("Digite um número natural: ")
    Leia(N)
 
-   Se (N < 0) ou (N > 15) Entao
-      Escreva("O número inserido está fora do intervalo válido (0 a 15).")
-   Senao
-      fatorial <- 1
+fatorial <- 1
 
-      Para contador de 1 ate N faca
-         fatorial <- fatorial * contador
-      FimPara
+  Para contador de 1 ate N faca
+     fatorial <- fatorial * contador
+ fimPara
 
-      Escreva("O fatorial de ", N, " é: ", fatorial)
-   FimSe
+Escreva("O fatorial de ", N, " é: ", fatorial)
+
 Fimalgoritmo
