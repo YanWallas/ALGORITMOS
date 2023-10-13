@@ -6,7 +6,9 @@ Algoritmo "CALCULE SALARIO EM LIBRAS"
 // Data atual  : 18/09/2023
 Var
 x: real;
+libra: real;
 hora: real;
+mes: real;
 resultadoH: real;
 resultadoD: real;
 resultadoM: real;
@@ -16,14 +18,20 @@ Inicio
 escreva ("Digite o valor ganho a hora em Libras->")
 leia (x)
 
+escreva ("Digite o valor da Libra hoje->")
+leia (libra)
+
 escreva ("Digite quantas hora por dia->")
 leia (hora)
 
-resultadoH <- x*6
-resultadoD <- resultadoH*hora
-resultadoM <- resultadoD*20
+escreva ("Digite quantas dias  no mês->")
+leia (mes)
 
-escreva (" Trabalhando ", hora, " horas por dia")
+resultadoH <- x * libra
+resultadoD <- resultadoH * hora
+resultadoM <- resultadoD * mes
+
+escreva (" Trabalhando ", hora, " horas por dia, com a Libra no valor de R$", libra:3:2)
 escreva (" ")
 escreva (" Valor ganho por hora é ", resultadoH:3:2)
 escreva (" ")
